@@ -64,7 +64,7 @@ $(document).ready(function(){
                         if(lsStatus != status || pemMode != mode) {
                             localStorage.setItem('mode','auto');
                             if(occupied) {
-                                if (light < 250) {
+                                if (light < 250) { // kondisi ketika cahaya kurang dari 250 lux
                                     for(i=0;i<3;i++) {
                                         if (dbLampu[i] !=status[i]) {
                                             if(status[i] == 'yes') {
@@ -80,7 +80,7 @@ $(document).ready(function(){
                                         autoModeFunc(name[3], 'tirai', 'yes');
 
                                     }                                   
-                                } else if (light >=250) {
+                                } else if (light >=250) { // kondisi ketika cahaya diatas 250 lux
                                     localStorage.setItem('tirai', 'no');
                                     localStorage.setItem('lampustatus0', 'no');
                                     localStorage.setItem('lampustatus1', 'no');
@@ -102,13 +102,13 @@ $(document).ready(function(){
                                         } 
                                     }
                                 } 
-                                if (suhu>=25) {
+                                if (suhu>=25) { // kondisi ketika suhu diatas 25 derajat celcius
                                     localStorage.setItem('kipas', 'yes');
                                     var lsKipas =localStorage.getItem('kipas');
                                     if ( lsKipas!=dbKipas) {
                                         autoModeFunc(name[4], 'kipas', 'yes');
                                     }
-                                } else if (suhu<25) {
+                                } else if (suhu<25) { // kondisi ketika suhu dibawah 25 derajat celcius
                                     localStorage.setItem('kipas', 'no');
                                     var lsKipas =localStorage.getItem('kipas');
                                     if ( lsKipas!=dbKipas) {
