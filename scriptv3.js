@@ -123,7 +123,6 @@ $(document).ready(function(){
                             }
                         } 
                     }
-
                     for (i=0;i<5;i++) {
                         if($(name[i]).attr('data') == 'yes') {
                             $(name[i]).prop('checked', true);                                             
