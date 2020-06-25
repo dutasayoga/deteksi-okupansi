@@ -36,7 +36,7 @@ $val = $result->fetch_assoc();
                         <h2 class="cuaca"> Cerah </h2>
                     
                     </div>
-                </div>
+                </div>  
                 
                 <div class="weather f">
                     <div>
