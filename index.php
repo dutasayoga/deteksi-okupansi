@@ -10,14 +10,14 @@ $val = $result->fetch_assoc();
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DS smart home and automation</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <script src="js/a076d05399.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="scriptv3.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DS smart home and automation</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="main.css">
+	<script src="js/a076d05399.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="scriptv3.js"></script>
 </head>
 
 <body>
@@ -34,7 +34,6 @@ $val = $result->fetch_assoc();
                     <div>  
                         <h5 class="date"> </h5>
                         <h2 class="cuaca"> Cerah </h2>
-                    
                     </div>
                 </div>  
                 

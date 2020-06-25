@@ -139,7 +139,7 @@ $(document).ready(function() {
 									}
 								}
 							} else {
-								console.log('false');
+								console.log('semua mati');
 								for (i = 0; i < 5; i++) {
 									autoModeFunc(name[i], newLampuStatus[i], 'no');
 								}
