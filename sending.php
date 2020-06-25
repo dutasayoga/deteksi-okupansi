@@ -48,7 +48,4 @@ if(isset($_POST['data'])) {
             break;
     }
 }
-
-//$conn->close();
-
 ?>
