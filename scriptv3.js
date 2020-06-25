@@ -188,6 +188,7 @@ function manualMode(name, a, b) {
 }
 // fungsi mengirimkan status alat ke control.db
 // dengan post method ke sending.php
+//
 function callAjax(datax) {
     $.ajax({
         type: "post",
