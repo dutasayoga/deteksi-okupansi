@@ -1,27 +1,25 @@
-
-body{
+body {
     background-color: rgba(89, 162, 251, 0.61);
     display: flex;
-    
 }
 
-*{
-    font-family: 'Lato', sans-serif;
+* {
+    font-family: "Lato", sans-serif;
 }
 
-.heading p{
+.heading p {
     text-decoration: none;
     color: inherit;
 }
 
-#dashboard{
+#dashboard {
     width: 450px;
     border-radius: 0 0 20px -15px black;
     margin: auto;
     background-color: rgb(221, 221, 221);
 }
 
-.header{
+.header {
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     border-radius: 0 0 50px 50px;
@@ -29,64 +27,63 @@ body{
     box-shadow: 0 5px 27px 0 rgba(165, 111, 111, 0.15);
 }
 
-.title{
+.title {
     font-size: 20px;
     padding-top: 1px;
 }
 
-.f{
+.f {
     display: flex;
 }
 
-.fe{
+.fe {
     align-items: flex-end;
     overflow: hidden;
 }
 
-#icon-w{
+#icon-w {
     color: rgb(255, 255, 0);
     text-shadow: 0 0 5px #000;
     padding-bottom: 10px;
 }
 
-.fe div{
+.fe div {
     margin: 10px 10px 10px 10px;
 }
 
-.cuaca{
+.cuaca {
     color: black;
     margin-top: 2px;
 }
 
-.date{
+.date {
     color: black;
     margin-top: 5px;
     font-size: 15px;
     padding-top: 15px;
     font-weight: 500;
-
 }
 
-.weather{
+.weather {
     margin-top: 20px;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.weather div>p{
+.weather div > p {
     margin-top: 10px;
     color: grey;
 }
-.weather div>strong{
-    font-size:20px;
+.weather div > strong {
+    font-size: 20px;
 }
 
-.weather div+div{
+.weather div + div {
     margin-left: 35px;
 }
 
-.appliances{
+.appliances {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -94,49 +91,48 @@ body{
     margin: 10px 0 10px;
 }
 
-
-.appliance{
+.appliance {
     position: relative;
     height: 240px;
     width: 45%;
     margin: 5px 11px 5px;
 }
-.appliance span{
+.appliance span {
     position: relative;
 }
-.appliance span::before,.appliance ::after{
+.appliance span::before,
+.appliance ::after {
     text-transform: uppercase;
     font-size: 12px;
     position: absolute;
     left: 0;
 }
-.appliance span::before{
-        content: attr(data-o);
-        opacity: 0;
+.appliance span::before {
+    content: attr(data-o);
+    opacity: 0;
 }
-.appliance span::after{
-        content: attr(data-c);
+.appliance span::after {
+    content: attr(data-c);
 }
 
-
-.appliance strong{
+.appliance strong {
     margin: 70px 0 15px;
     display: block;
     font-size: 18px;
 }
 
-.appliance label{
+.appliance label {
     position: relative;
     left: 10px;
     width: 90%;
     height: 80%;
     cursor: pointer;
     padding: 30px;
-    box-shadow: 1px 0 10px 10px rgba(0,0,0,0.13) ;
+    box-shadow: 1px 0 10px 10px rgba(0, 0, 0, 0.13);
     border-radius: 30px;
 }
 
-.appliance label::before{
+.appliance label::before {
     border-radius: 30px;
     position: absolute;
     top: 0;
@@ -145,7 +141,7 @@ body{
     height: 100%;
     z-index: 0;
     background-color: white;
-    content: '';
+    content: "";
 }
 
 .appliance label * {
@@ -162,8 +158,9 @@ body{
     right: 20px;
     transition: 200ms;
 }
-.appliance label small::after, .appliance label small::before {
-    content: '';
+.appliance label small::after,
+.appliance label small::before {
+    content: "";
 }
 .appliance label .f {
     width: 16px;
@@ -173,7 +170,8 @@ body{
     position: absolute;
     border-radius: 2px;
     top: 30px;
-    background-image: linear-gradient(0deg, white 2px, transparent 2px), linear-gradient(0deg, white 12px, transparent 0);
+    background-image: linear-gradient(0deg, white 2px, transparent 2px),
+        linear-gradient(0deg, white 12px, transparent 0);
     background-size: 17px 9px, 2px 15px;
     background-position: 0 0, 3px 0;
     background-repeat: no-repeat;
@@ -191,8 +189,9 @@ body{
     background-position: 3px -2px;
     background-repeat: no-repeat;
 }
-.appliance label .a::after, .appliance label .a::before {
-    content: '';
+.appliance label .a::after,
+.appliance label .a::before {
+    content: "";
     position: absolute;
     width: 8px;
     height: 8px;
@@ -219,11 +218,12 @@ body{
     border-radius: 3px;
     top: 30px;
 }
-.appliance label .r::after, .appliance label .r::before {
-    content: '';
+.appliance label .r::after,
+.appliance label .r::before {
+    content: "";
     border-width: 2px;
     border-style: solid;
-    border-color: rgba(57, 118, 246, .61) transparent transparent;
+    border-color: rgba(57, 118, 246, 0.61) transparent transparent;
     border-radius: 50%;
     position: absolute;
     display: block;
@@ -250,7 +250,7 @@ body{
     top: 30px;
 }
 .appliance label .l::before {
-    content: '';
+    content: "";
     width: 3px;
     height: 8px;
     background-color: rgba(57, 118, 246, 0.61);
@@ -261,11 +261,11 @@ body{
     left: 9px;
 }
 .appliance label .l::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 10px;
     height: 4px;
-    background: rgba(57, 118, 246, .61);
+    background: rgba(57, 118, 246, 0.61);
     border-radius: 0 0 9px 9px;
     top: 14px;
     left: 6px;
@@ -274,7 +274,7 @@ body{
     display: none;
 }
 .appliance input:checked + label::before {
-    content: '';
+    content: "";
     background: linear-gradient(to bottom, #59a2fb 0%, #3976f6 100%);
 }
 .appliance input:checked + label * {
@@ -283,25 +283,29 @@ body{
 .appliance input:checked + label i {
     background-color: rgba(255, 255, 255, 1);
 }
-.appliance input:checked + label i::before, .appliance input:checked + label i::after {
-    background-color: rgba(255, 255, 255, .61);
+.appliance input:checked + label i::before,
+.appliance input:checked + label i::after {
+    background-color: rgba(255, 255, 255, 0.61);
 }
 .appliance input:checked + label i.f {
-    background-image: linear-gradient(0deg, rgba(89, 162, 251, .61) 2px, transparent 2px), linear-gradient(0deg, rgba(89, 162, 251, .61) 12px, transparent 0);
+    background-image: linear-gradient(0deg, rgba(89, 162, 251, 0.61) 2px, transparent 2px),
+        linear-gradient(0deg, rgba(89, 162, 251, 0.61) 12px, transparent 0);
 }
 .appliance input:checked + label i.a {
-    background-image: linear-gradient(0deg, rgba(89, 162, 251, .61) 2px, transparent 2px);
+    background-image: linear-gradient(0deg, rgba(89, 162, 251, 0.61) 2px, transparent 2px);
 }
-.appliance input:checked + label i.a::before, .appliance input:checked + label i.a::after {
+.appliance input:checked + label i.a::before,
+.appliance input:checked + label i.a::after {
     background-color: rgba(255, 255, 255, 0);
-    border-color: transparent transparent rgba(255, 255, 255, .61);
+    border-color: transparent transparent rgba(255, 255, 255, 0.61);
 }
 .appliance input:checked + label i.r {
     background-color: rgba(255, 255, 255, 1);
 }
-.appliance input:checked + label i.r::before, .appliance input:checked + label i.r::after {
+.appliance input:checked + label i.r::before,
+.appliance input:checked + label i.r::after {
     background-color: rgba(255, 255, 255, 0);
-    border-color: rgba(255, 255, 255, .61) transparent transparent;
+    border-color: rgba(255, 255, 255, 0.61) transparent transparent;
 }
 .appliance input:checked + label small {
     width: 30px;
@@ -324,7 +328,7 @@ body{
     opacity: 0;
 }
 
-.control{
+.control {
     position: relative;
     display: flex;
     margin: 1px 1px 10px;
@@ -344,21 +348,16 @@ body{
     height: 50px;
     border-radius: 15px;
     padding: 10px;
-    box-shadow: 1px 1px 10px 10px rgba(0,0,0, 0.11);
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.11);
     text-decoration: none;
 }
 
 .button-activated {
     background-color: #3976f6;
     color: white;
-    
 }
 
 .button-deactivated {
     background-color: white;
     color: #000;
 }
-
-
-
-

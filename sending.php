@@ -3,7 +3,6 @@ include "conn/conn.php";
 $val = 1;
 $val1 = 0;
 
-
 if(isset($_POST['data'])) {
     switch($_POST['data']) {
         case '#ayes': //lampu 1 hidup
