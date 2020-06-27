@@ -123,14 +123,14 @@ $(document).ready(function() {
 										}
 									}
 								}
-								if (suhu >= 25) {
+								if (suhu > 25) {
 									// kondisi ketika suhu diatas 25 derajat celcius
 									localStorage.setItem('kipas', 'yes');
 									var lsKipas = localStorage.getItem('kipas');
 									if (lsKipas != dbKipas) {
 										autoModeFunc(name[4], 'kipas', 'yes');
 									}
-								} else if (suhu < 25) {
+								} else if (suhu <= 25) {
 									// kondisi ketika suhu dibawah 25 derajat celcius
 									localStorage.setItem('kipas', 'no');
 									var lsKipas = localStorage.getItem('kipas');
